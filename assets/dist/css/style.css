@@ -1,0 +1,123 @@
+.bg-img{
+    background-image: url("../../img/background.jpeg");
+    background-repeat: no-repeat;
+}
+.img{
+    /* opacity: .4; */
+    /* position: absolute; */
+    width: 289px;
+    height: 304px;
+    /* left: 93px; */
+    top: 51px;
+
+}
+
+
+.zoom {
+    padding: 50px;
+    background-color: transparent;
+    transition: transform .2s; /* Animation */
+    /* width: 200px;
+    height: 200px; */
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+  .img-div {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .centered {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  #loading {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background:rgb(247, 250, 102);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#spinner {
+    animation: rotate 0.56s infinite linear;
+    width:50px;
+    height:50px;
+    border:12px solid #fff;
+    border-bottom:12px solid rgb(255, 50, 50);
+    border-radius:50%;
+    margin:0;
+    position: absolute;
+}
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+.transparent{
+   /* opacity: .4; */
+    /* position: absolute; */
+    width: 90%;
+    height: 100%;
+    /* left: 93px; */
+    top: 51px;
+}
+.div-trans{
+  position: relative;
+  align-content: center;
+}
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  /* padding: 2px; */
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container1 {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
